@@ -1,0 +1,9 @@
+name: First_Workflow
+on: push
+jobs:
+  test:
+    runs-on: windows_latest
+    steps:
+      - name: Print Something
+        run: python GH-Actions.py
+
