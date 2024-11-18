@@ -1,5 +1,5 @@
 name: First_Workflow
-on: push
+on: workflow_dispatch
 jobs:
   test:
     runs-on: windows_latest
