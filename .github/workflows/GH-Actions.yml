@@ -5,7 +5,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Get Code
-        uses: actions/chckout@v4
+        uses: actions/checkout@v4
       - name: Print Something
         run: python GH_Actions.py
   task2:
