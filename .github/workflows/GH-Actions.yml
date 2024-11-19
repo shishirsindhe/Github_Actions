@@ -2,7 +2,7 @@ name: First_Workflow
 on: push
 jobs:
   task1:
-    runs-on: windows_latest
+    runs-on: windows-latest
     steps:
       - name: Get Code
         uses: actions/chckout@v4
