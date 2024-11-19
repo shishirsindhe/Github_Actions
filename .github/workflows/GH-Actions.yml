@@ -9,6 +9,7 @@ jobs:
       - name: Print Something
         run: python GH_Actions.py
   task2:
+    needs: task1
     runs-on: ubuntu-latest
     steps:
       - name: Get the Code
