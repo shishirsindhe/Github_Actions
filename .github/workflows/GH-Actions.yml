@@ -1,9 +1,18 @@
 name: First_Workflow
-on: workflow_dispatch
+on: push
 jobs:
-  test:
+  task1:
     runs-on: windows_latest
     steps:
+      - name: Get Code
+        uses: actions/chckout@v4
       - name: Print Something
-        run: python GH-Actions.py
+        run: python GH_Actions.py
+  task2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the Code
+        uses: actions/checkout@v4
+      - name: Print the Output
+        run: python3 GH_Actions.py
 
