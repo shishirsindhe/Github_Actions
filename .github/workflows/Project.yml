@@ -13,6 +13,6 @@ jobs:
     needs: Demo1
     steps:
       - name: Get the Code
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: Print the result
         run: echo "${{ toJSON(github) }}"
